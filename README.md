@@ -13,24 +13,26 @@ See it live on: http://www.opus-neoi.com
 1. Clone this repo and adjust it to your needs: Change the mailchimp list URI. And other stuff.
 1. Add the following snippet somewhere on your website:
 
-    <form action="https://your-endpoint.now.sh" method="POST">
-      <script
-          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="pk_live_YOUR_KEY"
-          data-amount="2000"
-          data-name="opus néoi"
-          data-currency="chf"
-          data-description="skinsure deposit"
-          data-image="https://res.cloudinary.com/optune-me/image/upload/v1488551372/custom/opus-neoi.com/Logo2.png"
-          data-locale="auto"
-          data-label="Subscribe & Deposit"
-          data-bitcoin="false"
-          data-panel-label="Deposit CHF 20.00"
-          >
-      </script>
-    </form>
+```
+<form action="https://your-endpoint.now.sh" method="POST">
+  <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_live_YOUR_KEY"
+      data-amount="2000"
+      data-name="opus néoi"
+      data-currency="chf"
+      data-description="skinsure deposit"
+      data-image="https://res.cloudinary.com/optune-me/image/upload/v1488551372/custom/opus-neoi.com/Logo2.png"
+      data-locale="auto"
+      data-label="Subscribe & Deposit"
+      data-bitcoin="false"
+      data-panel-label="Deposit CHF 20.00"
+      >
+  </script>
+</form>
+```
 
 1. deploy with:
   now
   now alias ...
-  
+
