@@ -2,11 +2,13 @@
   "main": "index.js",
   "scripts": {
     "start": "micro",
-    "deploy": "now -e STRIPE_SECRET_KEY=@stripe_secret_key"
+    "deploy": "now -e STRIPE_SECRET_KEY=@stripe_secret_key -e MAILCHIMP_API_KEY=@mailchimp_api_key"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
     "micro": "^7.1.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.1.1",
     "stripe": "^4.15.1",
     "urlencoded-body-parser": "^2.0.0"
   }
