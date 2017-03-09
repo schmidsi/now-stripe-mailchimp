@@ -1,5 +1,5 @@
-now mailchimp stripe
-====================
+Stripe Mailchimp now!
+=====================
 
 Simple microservice which runs on the awesome [zeit.co's now](https://zeit.co/now) (but probably also
 everywhere else) which receives a stripe token, charges a certain amount and subscribes the corresponding
@@ -13,7 +13,7 @@ See it live on: http://www.opus-neoi.com
 1. Clone this repo and adjust it to your needs: Change the mailchimp list URI. And other stuff.
 1. Add the following snippet somewhere on your website:
 
-```
+```html
 <form action="https://your-endpoint.now.sh" method="POST">
   <script
       src="https://checkout.stripe.com/checkout.js" class="stripe-button"

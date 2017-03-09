@@ -1,4 +1,21 @@
 {
+  "name": "now-stripe-mailchimp",
+  "version": "0.0.1",
+  "description": "Microservice (zeit.co now) to receive Stripe charges and subscribe mail to Mailchimp",
+  "homepage": "https://github.com/schmidsi/now-stripe-mailchimp",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:schmidsi/now-stripe-mailchimp.git"
+  },
+  "keywords": [
+    "now",
+    "zeit.co",
+    "mailchimp",
+    "stripe",
+    "microservice"
+  ],
+  "author": "Simon Schmid <simon@schmid.io> (http://www.schmid.io)",
+  "license": "LGPL 3",
   "main": "index.js",
   "scripts": {
     "start": "micro",
