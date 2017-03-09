@@ -15,7 +15,7 @@ module.exports = async function (req, res) {
       'user': 'stripe-microservice',
       'pass': process.env.MAILCHIMP_API_KEY,
     },
-    uri: 'https://us15.api.mailchimp.com/3.0/lists/f00ee7fa32/members/',
+    uri: process.env.MAILCHIMP_LIST_URI,
     body: {
         "email_address": data.stripeEmail,
         "status": "subscribed",

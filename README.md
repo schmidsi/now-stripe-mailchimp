@@ -9,9 +9,9 @@ See it live on: http://www.opus-neoi.com
 
 ## Get started
 
-1. Install [zeit.co's now](https://zeit.co/now)
-1. Clone this repo and adjust it to your needs: Change the mailchimp list URI. And other stuff.
-1. Add the following snippet somewhere on your website:
+- Install [zeit.co's now](https://zeit.co/now)
+- Clone this repo and adjust it to your needs: Change the mailchimp list URI. And other stuff.
+- Add the following snippet somewhere on your website:
 
 ```html
 <form action="https://your-endpoint.now.sh" method="POST">
@@ -32,7 +32,8 @@ See it live on: http://www.opus-neoi.com
 </form>
 ```
 
-1. deploy with:
+- Set your secrets (https://zeit.co/blog/environment-variables-secrets) 
+
+- deploy with:
   now
-  now alias ...
 

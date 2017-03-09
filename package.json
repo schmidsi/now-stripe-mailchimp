@@ -7,6 +7,14 @@
     "type": "git",
     "url": "git@github.com:schmidsi/now-stripe-mailchimp.git"
   },
+  "now": {
+    "alias": "stripe-opus-neoi",
+    "env": {
+      "STRIPE_SECRET_KEY": "@stripe_secret_key",
+      "MAILCHIMP_API_KEY": "@mailchimp_api_key",
+      "MAILCHIMP_LIST_URI": "@mailchimp_list_uri"
+    }
+  },
   "keywords": [
     "now",
     "zeit.co",
@@ -18,8 +26,7 @@
   "license": "LGPL 3",
   "main": "index.js",
   "scripts": {
-    "start": "micro",
-    "deploy": "now -e STRIPE_SECRET_KEY=@stripe_secret_key -e MAILCHIMP_API_KEY=@mailchimp_api_key"
+    "start": "micro"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
