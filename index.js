@@ -37,7 +37,7 @@ module.exports = async function (req, res) {
     })
 
     res.writeHead(302, {
-      'Location': 'http://opus-neoi.webflow.io/success'
+      'Location': 'http://www.opus-neoi.com/success'
     });
 
     res.end();
