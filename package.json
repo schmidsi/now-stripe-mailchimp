@@ -8,7 +8,7 @@
     "url": "git@github.com:schmidsi/now-stripe-mailchimp.git"
   },
   "now": {
-    "alias": "stripe-opus-neoi",
+    "alias": "https://stripe-opus-neoi.now.sh",
     "env": {
       "STRIPE_SECRET_KEY": "@stripe_secret_key",
       "MAILCHIMP_API_KEY": "@mailchimp_api_key",
@@ -26,7 +26,8 @@
   "license": "LGPL 3",
   "main": "index.js",
   "scripts": {
-    "start": "micro"
+    "start": "micro",
+    "deploy": "now && now alias"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
